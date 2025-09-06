@@ -1,2 +1,64 @@
-<h1>Bienvenue sur mon site</h1>
-<section>Nouvelle fonctionnalité ici </section>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .morning {
+            background-color: lightyellow;
+        }
+        .afternoon {
+            background-color: lightblue;
+        }
+        .evening {
+            background-color: lightgray;
+        }
+
+        /* Effet de survol sur le bouton */
+        button {
+            background-color: #4CAF50; /* Couleur verte */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Couleur plus foncée au survol */
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenue sur mon site</h1>
+
+    <section>Nouvelle fonctionnalité ici </section>
+
+    <section>
+        <h2>Nouvelle fonctionnalité</h2>
+        <p>Nous avons récemment ajouté une fonctionnalité qui permet aux visiteurs de découvrir nos produits en temps réel, avec des mises à jour dynamiques et une interface simplifiée.</p>
+        <ul>
+            <li>Affichage automatique de l'heure locale</li>
+            <li>Changement de thème selon le moment de la journée</li>
+            <li>Section "À propos" interactive</li>
+        </ul>
+        <button onclick="afficherAPropos()">En savoir plus</button>
+    </section>
+
+    <script>
+        // Fonction pour afficher plus d'informations sur "À propos"
+        function afficherAPropos() {
+            alert("Nous sommes une équipe passionnée par l'innovation et la technologie !");
+            
+            // Redirection vers index.html
+            window.location.href = "index.html";  // La page vers laquelle tu veux rediriger
+        }
+    </script>
+</body>
+</html>
